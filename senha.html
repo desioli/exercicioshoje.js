@@ -1,0 +1,24 @@
+23 lines (21 sloc)  696 Bytes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let senhaCorreta = ['159000']
+    let senhaDigitada = ['123456', '456789', '123456', '321897', '456879']
+    console.log(senhaDigitada)
+    let data = prompt("Qual a senha?")
+       if (senhaCorreta.includes(data) == true) {
+       window.alert("A senha esta correta.");
+       } else if (senhaDigitada.includes(data) == true) {
+        window.alert("A senha esta incorreta.");
+      }    
+  </script>
+</body>
+</html>
