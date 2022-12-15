@@ -10,14 +10,12 @@
 </head>
 <body>
   <script>
-    let senhaCorreta = ['159000']
-    let senhaDigitada = ['123456', '456789', '123456', '321897', '456879']
-    console.log(senhaDigitada)
-    let data = prompt("Qual a senha?")
-       if (senhaCorreta.includes(data) == true) {
-       window.alert("A senha esta correta.");
-       } else if (senhaDigitada.includes(data) == true) {
-        window.alert("A senha esta incorreta.");
+    let senhaCorreta = '159000'
+    let password = prompt("Qual a senha?")
+       if (senhaCorreta === password) {
+       alert("A senha esta correta.");
+       } else {
+      alert("A senha esta incorreta.");
       }    
   </script>
 </body>
